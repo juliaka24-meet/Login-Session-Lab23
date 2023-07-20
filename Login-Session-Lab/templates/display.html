@@ -7,8 +7,10 @@
 </head>
 <body>
 
-<!-- Display the variables from the login session here!
- -->
+{%for info in login_session %}
+<p>{{login_session[info]}}</p>
+{%endfor%}
 
+<button type="button"> Add a new quote </button>
 </body>
 </html>
